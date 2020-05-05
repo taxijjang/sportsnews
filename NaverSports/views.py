@@ -17,7 +17,7 @@ def model_reset(sport_lists):
 
 
 def crwaling():
-    NaverSports(
+   """  NaverSports(
             rank = 1,
             url = "fake",
             title= "fake",
@@ -28,7 +28,7 @@ def crwaling():
         print("A")
     else:
         print('b')
-        NaverSports.objects.all().delete()
+        NaverSports.objects.all().delete() """
 
     url = "https://sports.news.naver.com/wfootball/index.nhn"
 
