@@ -17,7 +17,15 @@ def model_reset(sport_lists):
 
 
 def crwaling():
-    NaverSports.objects.all().delete()
+ 
+    is_model = NaverSports.objects.all()
+
+    if is_model.exists():   
+        print("A")
+    else:
+        print('b')
+        NaverSports.objects.all().delete()
+
     url = "https://sports.news.naver.com/wfootball/index.nhn"
 
     html = urlopen(url)
