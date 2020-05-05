@@ -19,7 +19,7 @@ def model_reset(sport_lists):
 def crwaling():
     NaverSports(
             rank = 1,
-            url = "fake,
+            url = "fake",
             title= "fake",
         ).save()
     is_model = NaverSports.objects.all()
