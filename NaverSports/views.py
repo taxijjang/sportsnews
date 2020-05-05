@@ -17,6 +17,11 @@ def model_reset(sport_lists):
 
 
 def crwaling():
+    NaverSports(
+            rank = 1,
+            url = "",
+            title= "",
+        ).save()
     NaverSports.objects.all().delete()
     url = "https://sports.news.naver.com/wfootball/index.nhn"
 
