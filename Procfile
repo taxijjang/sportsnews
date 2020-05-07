@@ -1,1 +1,1 @@
-web: gunicorn ccc.wsgi --log-file -
+web: gunicorn sportsnews.wsgi --log-file -
