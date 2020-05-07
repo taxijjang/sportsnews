@@ -60,7 +60,7 @@ def crwaling():
        
         sport_list.append(rank_title)
 
-    if not NaverSports.objects:
+    if NaverSports.objects.count() <= 0:
         create_model(sport_list)
     else:
         update_model(sport_list)
