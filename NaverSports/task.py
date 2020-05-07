@@ -60,10 +60,14 @@ def crwaling():
        
         sport_list.append(rank_title)
 
-    if NaverSports.objects.count() <= 0:
-        create_model(sport_list)
-    else:
+    #print(NaverSports.objects.filter(rank=1))
+
+    try:
+        obj = NaverSports.objects.get(rank = 1)
+        print(obj)
+    except NaverSports.DoesNotExist:
+        create_model(sport_list) 
+    else :
         update_model(sport_list)
-
-
-#crwaling()
+                
+crwaling()
