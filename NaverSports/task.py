@@ -66,4 +66,4 @@ def crwaling():
         update_model(sport_list)
 
 
-#crwaling()
+crwaling()
