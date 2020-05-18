@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 import re
 
-from threading import Thread
+#from threading import Thread
 import time
 def create_model(sport_lists):
     print("create model")
