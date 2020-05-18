@@ -11,7 +11,7 @@ class NaverSportsViewSet(viewsets.ModelViewSet):
 
     queryset = NaverSports.objects.all()
     serializer_class = NaverSportsSerializer
-
+    task
     #def get_queryset(self):
     #    task
     #    print("Asdf")
